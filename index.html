@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>plantsapp</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <nav>
+                <a href="#" class="hide-desktop">
+                    <img src="menu.png" alt="menu" class="menu" id="menu">
+                    <img src="notify.png" width="50px" alt="notify" class="notify">
+                </a>
+
+                <ul class="show-desktop hide-mobile" id="nav">
+                        <li id="cancel" class="cancel-btn hide-desktop">
+                        <img src="cancel.png" alt="cancel menu"></li>
+                        <li><a class="home"a href="#">Profile</a></li>
+                        <li><a class="product" a href="#">Favorites</a></li>
+                        <li><a class="product" a href="#">Basket</a></li>
+                        <li><a class="product" a href="#">About Us</a></li>
+                        <li><a class="product" a href="#">Settings</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+    <div class="search-bar">
+        <img src="sech.png" width="50px" alt="sech" class="sech">
+        <input type="search" value="search plants..." class="search">
+    </div>
+    <div class="container">
+        <div class="reco">
+        <h3 class="recommended">Recommended</h3>
+        </div>
+        <div class="reco">
+        <img src="arow.png" width="50px" alt="arow" class="arow">
+        </div>
+        <div class="clr"></div>
+        <div class="container-green">
+            <a href="/soap.html"><img src="plant2.png" width="150px" alt="plant" class="aloe">
+            <img src="lovered.png" width="50px" alt="love" class="favor">
+            <h3>Soap Aloe</h3>
+            <h2>$25</h2></a>
+        </div>
+        <div class="container-bluee">
+            <img src="plant4.png" width="150px" alt="plant" class="pothos">
+            <img src="love.png" width="50px" alt="love" class="favor2">
+            <h3>Pothos</h3>
+            <h2>$19</h2>
+        </div>
+        <div class="clr"></div>
+    </div>
+    <a href="#">
+    <div class="container1">
+        <h4 class="sync">Synthetic</h4>
+    </div>
+    <div class="container1">
+        <h4>Organic</h4>
+    </div>
+    <div class="container1">
+        <h4>Indoor</h4>
+    </div>
+    <div class="container1">
+        <h4>Outdoor</h4>
+    </div>
+    <div class="container1">
+        <h4>Garden</h4>
+    </div>
+    </a>
+    <div class="clr"></div>
+    <div id="diva">
+    <div class="scroll-touch">
+        <section>
+            <a href="#"><img src="totemp.png" alt="" class="totem"></a>
+            <a href="#"><img src="dragon.png" alt="" class="dragon"></a>
+            <a href="#"><img src="poots.png" alt="" class="poots"></a>
+        </section>
+    </div>
+    </div>
+    
+    <div>
+        <h3 class="sec">Recently Viewed</h3>
+        <div class="container-green">
+            <a href="/soap.html"><img src="plant2.png" width="150px" alt="plant" class="aloe">
+            <img src="lovered.png" width="50px" alt="love" class="favor">
+            <h3>Soap Aloe</h3>
+            <h2>$25</h2></a>
+        </div>
+    </div>
+    <div class="clr"></div>
+    <div class="container-bluee2">
+        <div class="footer">
+            <a href="#">
+            <img src="home.png" width="30px" alt="" class="home-i">
+            <p class="home-p">Home</p>
+            </div>
+            <div class="footer">
+            <img src="favor.png" width="30px" alt="" class="fav-i">
+            <p>Favorites</p>
+            </div>
+            <div class="footer">
+            <img src="basket.png" width="30px" alt="" class="basket-i">
+            <p>Basket</p>
+            </div>
+            <div class="footer">
+            <img src="profile.png" width="30px" alt="" class="profile-i">
+            <p>Profile</p>
+            </a>
+            </div>
+    </div>
+    <div>
+        <h3 class="sec">Recently Viewed</h3>
+        <div class="container-green">
+            <a href="/soap.html"><img src="plant2.png" width="150px" alt="plant" class="aloe">
+            <img src="lovered.png" width="50px" alt="love" class="favor">
+            <h3>Soap Aloe</h3>
+            <h2>$25</h2></a>
+        </div>
+    </div>
+    <div class="clr"></div>
+    <script>
+
+        var menu = document.getElementById('menu');
+        var nav = document.getElementById('nav');
+        var cancel = document.getElementById('cancel');
+
+        menu.addEventListener('click', function(e) {
+            nav.classList.toggle('hide-mobile');
+            e.preventDefault();
+        });
+
+        cancel.addEventListener('click', function(e) {
+            nav.classList.add('hide-mobile');
+            e.preventDefault();
+        });
+
+    </script>
+</body>
+</html>
